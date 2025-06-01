@@ -1,4 +1,4 @@
-#Qc = quantidade
+#Qc = Quantidade
 Qc = input('Digite qualquer coisa: ')
 print('Tipo primitivo de valor: ',type(Qc))
 print('So tem espacos: ',Qc.isspace())
