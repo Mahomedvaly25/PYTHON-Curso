@@ -1,1 +1,0 @@
-print('testando the and')

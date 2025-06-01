@@ -1,1 +1,0 @@
-print('Ola, Mundo, este e o teste do VS Code!')
