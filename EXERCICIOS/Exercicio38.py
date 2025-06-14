@@ -11,5 +11,5 @@ if primeiro > segundo:
 elif segundo > primeiro:
     print('O SEGUNDO valor {} é o MAIOR'.format(segundo))
 else:
-    print('Nao EXISTE um valor MAIOR, os dois sao IGUAIS.')
+    print('Nao EXISTE um valor MAIOR, os 2 sao IGUAIS.')
 
