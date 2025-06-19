@@ -16,6 +16,6 @@ for c in range(1,4):
     somaidade = somaidade + idade
 
     if c == 1 and sexo in 'M,m':
-        somaidade = idade
+        somaidade = idad
     media = somaidade / 4
 print("A media de idade foi {}".format(media))
