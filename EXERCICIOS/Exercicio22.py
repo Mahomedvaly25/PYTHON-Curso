@@ -10,7 +10,7 @@ print('+'*50)
 print('ANALISE DO NOME: **',nome,'**')
 print('Tornando as letra em Maiusculas: ',nome.upper())
 print('Tornando as letra em Menusculas: ',nome.lower())
-print('A Nome ',nome,' tem {} letras ao todo'.format(len(nome) - nome.count(' ')))
+print('O Nome ',nome,' tem {} letras ao todo'.format(len(nome) - nome.count(' ')))
 print('O seu 1o nome tem {} letras'.format(nome.find(' ')))
 # OU
 separa = nome.split()
