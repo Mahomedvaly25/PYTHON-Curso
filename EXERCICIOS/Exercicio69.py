@@ -5,3 +5,4 @@
 # - Quantos homens foram cadastrados
 # - Quantas Mulheres com menos de 20 Anos.
 
+print("CADASTRE UMA PESSOA")
