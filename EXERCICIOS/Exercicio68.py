@@ -2,10 +2,9 @@
 # No final mostrando o total de victorias consecutivas que ele conquistou no final do jogo.
 
 from random import randint
-
-
 resultado = vitorias = 0
-print('Vamos Jogar Par ou Impar')
+
+print('VAMOS JOGAR PAR OU IMPAR')
 
 while True:
     numerojogador = int(input('Digite um Valor: '))
@@ -16,18 +15,23 @@ while True:
         parOUimpar = str(input('Par ou Impar: [P/I] ')).strip().upper()[0]
     if parOUimpar == 'P':
         if resultado % 2 == 0:
-            resultado = 'P'
-            print('VOCE VENCEU')
+            parOUimpar = 'PAR'
+            print(f'{f"DEU {parOUimpar}!!!\nVOCE VENCEU":*^60}')
             vitorias += 1
         else:
-            print('VOCE PERDEU!')
+            parOUimpar = 'IMPAR'
+            print(f'DEU {parOUimpar:*^10}!!!\nVOCE PERDEU!')
             break
-    elif resultado % 2 == 1:
-        if resultado == 'I':
-            print('VOCE VENCEU')
+    elif parOUimpar == 'I':
+        if resultado % 2 == 1:
+            parOUimpar = 'IMPAR'
+            print(f'DEU {parOUimpar:*^10}!!!\nVOCE VENCEU')
             vitorias += 1
         else:
-            print('VOCE PERDEU')
+            parOUimpar = 'PAR'
+            print(f'DEU {parOUimpar:*^10}!!!\nVOCE PERDEU')
             break
-    print(f'Voce jogou {numerojogador} e o computador {computador}. Total deu {resultado} que corresponde a {vitorias} vitorias ate agora.')
+    print(f'Voce jogou {numerojogador} e o computador {computador}. Total deu {resultado}', end=' ')
+    print(f'que corresponde a {vitorias} vitorias.' if vitorias > 1 else f'que corresponde a {vitorias} vitoria ate agora.')
+print(' ')
 print(f'GAME OVER! Voce venceu {vitorias} vezes.')
