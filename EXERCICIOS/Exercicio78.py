@@ -14,5 +14,12 @@ for cont in range(0,5):
             menor = valores[cont]
 print('='*50)
 print(f'Os Valores digitados foram: {valores}')
-print(f'O Maior valor digitado for {maior}')
-print(f'O menor valor digitado foi {menor}')
+print(f'O Maior valor digitado foi {maior} na posicao ',end=' ')
+for pos, num in enumerate(valores):
+    if num == maior:
+        print(pos ,end=' ')
+print()
+print(f'O Menor valor digitado foi {menor} na posicao ', end=' ')
+for  pos, num in enumerate(valores):
+    if num == menor:
+        print(pos , end=' ')
