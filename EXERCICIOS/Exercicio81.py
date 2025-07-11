@@ -16,9 +16,13 @@ while True:
         break
 
 list.sort(reverse=True)
-print(f'Voce digitou {len(list)} elementos.')
-print(f'Os Valores em ordem Decrescente sao: {list}')
+print('-='*30)
+print(f'Voce digitou \033[1;33m{len(list)}\033[m elementos.')
+print('-='*30)
+print(f'Os Valores em ordem Decrescente sao: \033[1;33m{list}\033[m')
+print('-='*30)
 if 5 in list:
-    print('O Valor (5) faz parte da lista.')
+    print('O Valor \033[1;33m(5)\033[m faz parte da lista.')
 else:
-    print('O Valor (5) nao foi encontrado na lista.')
+    print('O Valor \033[1;31;m(5)\033[m nao foi encontrado na lista.')
+print('-='*30)
