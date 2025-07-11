@@ -4,7 +4,7 @@ maior = 0
 menor = 0
 valores = []
 for cont in range(0,5):
-    valores.append(int(input(f'Digite qualquer numero para a posicao {cont}: ')))
+    valores.append(int(input(f'Digite qualquer numero para a \033[32mPOSICAO {cont}\033[m: ')))
     if cont == 0:
         maior = menor = valores[cont]
     else:
@@ -12,7 +12,7 @@ for cont in range(0,5):
             maior = valores[cont]
         if valores[cont] < menor:
             menor = valores[cont]
-print('='*50)
+print('\033[33m=\033[m'*50)
 print(f'Os Valores digitados foram: {valores}')
 print(f'O Maior valor digitado foi {maior} na posicao ',end=' ')
 for pos, num in enumerate(valores):
