@@ -14,5 +14,6 @@ for c in range(0,5):
                 lista.insert(pos, n)
                 break
             pos += 1
-
-print(lista)
+print('\033[33m-=\033[m'*22)
+print(f'Os Numeros digitados sao: \033[34m{lista}\033[m')
+print('\033[33m-=\033[m'*22)
