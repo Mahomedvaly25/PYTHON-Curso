@@ -18,7 +18,7 @@ for cont in list:
         listpar.append(cont)
     else:
         listimpar.append(cont)
-
-print(list)
-print(listpar)
-print(listimpar)
+print('\033[36m-=\033[m'*25)
+print(f'\033[4mO Total de Numeros digitados\033[m \033[1;31m{list}\033[m')
+print(f'O Total de Numeros \033[42mPARES\033[m \033[1;31m{listpar}\033[m')
+print(f'O Total de Numeros \033[43mIMPARES\033[m \033[1;31m{listimpar}\033[m')
