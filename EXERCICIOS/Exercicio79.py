@@ -18,5 +18,6 @@ while True:
         resp = str(input('Quer continuar: [S/N]')).upper().strip()[0]
     if resp == 'N':
         break
-
-print(f'Digitou os valores: {sorted(num)}')
+print('='*37)
+print(f'Digitou os valores: \033[34m{sorted(num)}\033[m')
+print('='*37)
