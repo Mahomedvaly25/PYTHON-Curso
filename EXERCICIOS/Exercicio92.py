@@ -6,15 +6,17 @@ from datetime import date
 cadastro = dict()
 anoactual = date.today().year
 cadastro['nome'] = str(input('Digite o nome:  '))
-cadastro['Nascimento'] = int(input(f'Ano de nascimento do {cadastro["nome"]}:  '))
-cadastro['Idade'] = anoactual - cadastro['Nascimento']
-print(cadastro)
-if cadastro['Idade'] >= 18:
-    cadastro['CTrabalho'] = int(input('Indique o No. da Carteira de Trabalho: '))
+AnoNascimento = int(input(f'Ano de nascimento do {cadastro["nome"]}:  '))
+cadastro['Idade'] = anoactual - AnoNascimento
+cadastro['CTrabalho'] = int(input('Numero de Carteira de Trabalho [Clique 0 se nao tiver]:  '))
+if cadastro['CTrabalho'] != 0:
     cadastro['AnoContratacao'] = int(input('Indique o ano do inicio do Contrato de trabalho?  '))
-    cadastro['Salario'] = float(input('Indique o Salario:  '))
-    print(cadastro['CTrabalho'])
+    cadastro['Salario'] = float(input('Indique o Salario: $'))
+    cadastro['aposentadoria'] = (cadastro['AnoContratacao'] + 35) - AnoNascimento
 else:
     print('Nao tem idade suficiente para trabalho')
-print(cadastro)
+print('-=' * 30)
+for k,v in cadastro.items():
+    print(f'   - {k} = {v}')
+print()
 print('Obrigado')
