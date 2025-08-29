@@ -20,8 +20,15 @@ while True:
             break
     if resp in 'N':
         break
-print('-=' * 20)
+print('-=' * 30)
+print(f'    COD', end=' ')
+for c in cadastro.keys():
+    print(f'  {c:<15}', end='')
+print()
+print('-=' * 30)
 for i, v in enumerate(time):
-    print(f'{i+1} ', end=' ')
+    print(f'    {i+1:>2} ',end=' ')
     for d in v.values():
-        print(f'{d}', end=' ')
+        print(f'  {str(d):<15}',end=' ')
+    print()
+print('-=' * 30)
