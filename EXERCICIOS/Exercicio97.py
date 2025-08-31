@@ -8,3 +8,15 @@ Saida:
   Ola, Mundo!
 ~~~~~~~~~~~~~~~
 '''
+
+def escreva(txt):
+    tam = len(txt) + 4
+    print('-' * tam)
+    print(f'  {txt}')
+    print('-' * tam)
+
+
+titulo = str(input('Digite um Titulo qualquer: '))
+escreva(titulo)
+titulo = str(input('Outro Titulo: '))
+escreva(titulo)
