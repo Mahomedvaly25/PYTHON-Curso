@@ -4,6 +4,8 @@ a) De 1 a 10, de 1 em 1
 b) De 10 ate 0, de 2 em 2
 c) Uma contagem personalizada.
 '''
+from time import sleep
+
 
 def contador(i,f,p):
     print('-=' * 30)
@@ -16,6 +18,7 @@ def contador(i,f,p):
         print(f'Contador de 1 ate 10 de 1 em 1')
         while cont <= f:
             print(f'{cont}', end=' ')
+            sleep(1)
             cont += p
         print('FIM!')
     else:
