@@ -5,6 +5,12 @@ se sera mostrado ou nao na tela o processo de calculo do factorial.
 '''
 
 def factorial(n, show=False):
+    """
+    -> Calcule o Factorial de um Numero.
+    :param n: O Numero a ser calculado.
+    :param show: (opcional) Mostrar ou nao a conta.
+    :return: O resultado do calculo de factorial de numero n.
+    """
     f = 1
     for c in range(n , 0 , -1):
         if show:
@@ -17,4 +23,6 @@ def factorial(n, show=False):
     return f
 
 
-print(factorial(5, show=True))
+num = int(input('Quer Factorial de qual numero: '))
+print(factorial(num, show=True))
+help(factorial)
